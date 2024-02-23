@@ -7,7 +7,7 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 
 public class JSON_SchemaValidation {
 	
-	@Test
+	@Test (priority=1)
 	void JsonSchemaValidation()
 	{
 		given()
@@ -18,5 +18,7 @@ public class JSON_SchemaValidation {
 		.then()
 			.assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("storeDataSchema.json"));
 	}
+	
+	
 
 }
