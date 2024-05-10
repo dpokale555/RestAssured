@@ -8,6 +8,7 @@ import io.restassured.matcher.RestAssuredMatchers;
 
 public class XML_SchemaValidation {
 	
+
 	@Test (priority=1)
 	void JsonSchemaValidation()
 	{
